@@ -21,5 +21,5 @@
 - `Machine_Learning/`: 머신러닝 기초 이론 및 실습 코드 보관
 
 ## 🔗 Contact & Blog
-- **Blog:** [https://velog.io/@gnu_coding_god/posts]
+- **Blog:** https://velog.io/@gnu_coding_god/posts
 - **Email:** msn1009e@gmail.com
