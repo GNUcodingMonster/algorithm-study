@@ -39,7 +39,7 @@ def solution():
     for _ in range(E):
         u, v, w = map(int, input().split())
         graph[u].append((v,w))
-    distance = dijkstra(graph, start, V)
+    distance = dijkstra(graph, start,)
     for i in range(1,V+1):
         if distance[i] == INF:
             print("INF")
