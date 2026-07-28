@@ -114,9 +114,11 @@ for test_case in range(1, T + 1):
         for i in range(4):
             #만약 사칙연산 개수 남아있으면 사용한다.
             if op_count[i] >0 :
+                depth += 1
                 op_count[i] -= 1
-                recursive_make_num(op(i, current_num, numbers(depth+1)),depth+1)
+                recursive_make_num(op(i, current_num, numbers(depth)),depth)
                 depth -= 1
+                op_count[i] += 1
                 #자 그래서 돌아왔다. + 다쓰고 - 있는 상태로 어펜드하고 depth 1빠진 상태로 돌아왔는데
                 #여기서 그럼 뭘 해야하냐
                 # current_num 쓰면 되니깐 값 돌릴 필요도 없다.
@@ -147,9 +149,9 @@ for test_case in range(1, T + 1):
     
     
     #저장된 temp min max 불러와서 차 구하고 result에 넣는다
-    
+    answer = max(result) - min(result)
     #result값 출력
-        
+    print(f'#{test_case} {answer}')
 
     
     # ///////////////////////////////////////////////////////////////////////////////////
